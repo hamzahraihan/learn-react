@@ -2,9 +2,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 
-function App() {
+function TryBootstrap() {
   return (
-    <div className="Navbar">
+    <div className="App">
       <nav className="navbar bg-light">
         <div className="container-fluid">
           <span className="navbar-brand mb-0 h1">Navbar</span>
@@ -13,3 +13,5 @@ function App() {
     </div>
   );
 }
+
+export default TryBootstrap;
