@@ -1,14 +1,27 @@
 import "./App.css";
-import { planets } from "./Planet";
+import { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const increase = () => {
+    setCount(count + 1);
+  };
+  const decrease = () => {
+    setCount(count - 1);
+  };
+  const setToZero = () => {
+    setCount(0);
+  };
+
   return (
     <div className="App">
-      {planets.map((planet, key) => {
-        if (planet.isGasPlanet) return <h1>{planet.name}</h1>;
-      })}
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
+      <button onClick={setToZero}>Set to 0</button>
+      {count}
     </div>
   );
 }
