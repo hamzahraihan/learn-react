@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export function About() {
+export function BookList() {
   return (
     <>
       <Helmet>
-        <title>About</title>
+        <title>Book List</title>
       </Helmet>
-      <h1>About</h1>
+      <h1>BookList</h1>
     </>
   );
 }

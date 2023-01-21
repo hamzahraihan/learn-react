@@ -1,3 +1,12 @@
+import { Helmet } from "react-helmet";
+
 export function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
+      <h1>Contact</h1>
+    </>
+  );
 }
