@@ -8,5 +8,6 @@ export function Contact() {
       </Helmet>
       <h1>Contact</h1>
     </>
+    test
   );
 }
